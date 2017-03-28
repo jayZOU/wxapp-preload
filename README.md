@@ -3,7 +3,7 @@
 
 ## Usage
 
-1、将```compontents```和```util```(可选)目录复制到你的项目中，然后在页面wxml中添加预加载模版   
+1、将```compontents```目录复制到你的项目中，然后在页面wxml中添加预加载模版   
 
 ```html
 <import src="../../compontents/preload/preload.wxml" />   
@@ -13,7 +13,6 @@
 2、在页面JS文件中引入预加载脚本，实例化预加载并传入需要加载的图片地址(可多张或单张)   
 
 ```javascript
-//由于预加载脚本使用了promise，但是小程序本身并不支持promise，所以需要引入相关polyfill文件，这里使用bluebird作为扩展库，可以根据需求来决定(bluebird源文件在util文件夹里)
 import Preload from '../../compontents/preload/preload';
 
 const preload = new Preload(this);
@@ -25,12 +24,12 @@ const imgList = [
       'https://1x.com/images/user/9c22479cb7d139b7c1fe66f8bd4b8ffe-ld.jpg',
 ];
 preload.loadList(imgList)
-	.then((res) => {
-		console.log(res);
-	})
-	.catch((err) => {
-		console.log(res);
-	})
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(res);
+  })
 ```
 
 ## API   
@@ -48,8 +47,8 @@ preload.loadList(imgList)
         return preload.load('https://1x.com/images/user/9c22479cb7d139b7c1fe66f8bd4b8ffe-ld.jpg')
     })
     .then((res) => {
-		console.log(res);
-	})
+    console.log(res);
+  })
     .catch((err) => {
         console.log(res);
     })

@@ -1,4 +1,4 @@
-import Promise from '../../utils/libs/bluebird.min';
+import Promise from './es6-promise.min';
 
 class Preload {
 	constructor(context){
