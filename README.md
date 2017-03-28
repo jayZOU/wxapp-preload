@@ -1,7 +1,7 @@
 # wxapp-preload   
 微信小程序图片预加载
 
-##Usage
+## Usage
 
 1、将```compontents```和```util```(可选)目录复制到你的项目中，然后在页面wxml中添加预加载模版   
 
@@ -33,12 +33,12 @@ preload.loadList(imgList)
 	})
 ```
 
-##API   
+## API   
 
-###loadList(arr)  
+### loadList(arr)  
 加载多种图片，与```load```API可串联使用
 
-###load(url)  
+### load(url)  
 加载单张图片，与```loadList```API可串联使用
 
 ```javascript
