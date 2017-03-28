@@ -1,0 +1,13 @@
+
+<import src="../../compontents/preload/preload.wxml" />
+
+<!--index.wxml-->
+<scroll-view class="goods" scroll-y="true">
+	<template is="preload" data="{{imgLoadList}}"/>
+	<image src="https://1x.com/images/user/e532db2968d553b3253095cd8572d0d3-ld.jpg" wx:if="isShow"></image>
+	<image src="https://1x.com/images/user/356ec5fd19e63e01af9ac64f8e317b48-ld.jpg" wx:if="isShow"></image>
+	<image src="https://1x.com/images/user/8fbec1e74cda9d286e409986f0bf5395-ld.jpg" wx:if="isShow"></image>
+	<image src="https://1x.com/images/user/68fded846b209b23a88fd1f71045adc8-ld.jpg" wx:if="isShow"></image>
+	<image src="https://1x.com/images/user/9c22479cb7d139b7c1fe66f8bd4b8ffe-ld.jpg" wx:if="isShow"></image>
+</scroll-view>
+

@@ -1,0 +1,3 @@
+<template name="preload">
+	<image mode="aspectFit" wx:for="{{imgLoadList}}" wx:key="*this" src="{{item}}" data-src="{{ item }}" bindload="_loadImg" binderror="_loadImgError" style="opacity: 0;width: 0; height: 0"></image>
+</template>
